@@ -1,4 +1,3 @@
-    
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8" />
@@ -18,7 +17,6 @@
         <div class="inner">
           <img src="images/illustration-woman-online-desktop.svg" alt="">
           <img src="images/bg-pattern-desktop.svg" alt="" class="sec-img">
-          
         </div>
         <div class="outer">
           <img src="images/illustration-box-desktop.svg" alt="">
@@ -94,6 +92,9 @@
           // Toggle the class for icon rotation
           const iconElement = questionContainer.querySelector("img");
           iconElement.classList.toggle("rotate-icon");
+             // Toggle the style of the h4 element
+        const h4Element = questionContainer.querySelector("h4");
+        h4Element.classList.toggle("bold-h4");
         });
       });
     </script>
