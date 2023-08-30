@@ -1,105 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <title>Frontend Mentor | FAQ Accordion Card</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main id="container">
-      <div id="left-section">
-        <div class="inner">
-          <img src="images/illustration-woman-online-desktop.svg" alt="">
-          <img src="images/bg-pattern-desktop.svg" alt="" class="sec-img">
-        </div>
-        <div class="outer">
-          <img src="images/illustration-box-desktop.svg" alt="">
-        </div>
-      </div>
-      <div id="right-section">
-        <h1>FAQ</h1>
-        
-        <div class="qa-pair">
-          <div class="question">
-            <h4>How many team members can I invite?</h4>
-            <img src="images/icon-arrow-down.svg" alt="">
-          </div>
-          <p class="show-answer">
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
-          </p>
-        </div>
-        <div class="qa-pair">
-          <div class="question">
-            <h4>What is the maximum file upload size?</h4>  
-            <img src="images/icon-arrow-down.svg" alt="">
-          </div>
-          <p class="show-answer">
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
-        </div>
-        <div class="qa-pair">
-          <div class="question">
-            <h4>How do I reset my password?<h4>
-            <img src="images/icon-arrow-down.svg" alt="">
-          </div>
-          <p class="show-answer">
-            Click “Forgot password” from the login page or “Change password”
-            from your profile page. A reset link will be emailed to you.
-          </p>
-        </div>
-        <div class="qa-pair">
-          <div class="question">
-            <h4>Can I cancel my subscription?<h4>  
-            <img src="images/icon-arrow-down.svg" alt="">
-          </div>
-          <p class="show-answer">
-            Yes! Send us a message and we'll process your request no questions
-          asked.
-          </p>
-        </div>
-        <div class="qa-pair">
-          <div class="question">
-            <h4>Do you provide additional support?<h4>  
-            <img src="images/icon-arrow-down.svg" alt="">
-          </div>
-          <p class="show-answer">
-            Chat and email support is available 24/7. Phone lines are open
-            during normal business hours.
-          </p>
-        </div>
-      </div>
-    </main>
-   
-    <script
-      src="https://kit.fontawesome.com/dacccb715c.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      const questionContainers = document.querySelectorAll(".qa-pair .question");
     
-      questionContainers.forEach((questionContainer) => {
-        questionContainer.addEventListener("click", () => {
-          const answerElement = questionContainer.nextElementSibling;
-          answerElement.classList.toggle("show-answer");
-          
-          // Toggle the class for icon rotation
-          const iconElement = questionContainer.querySelector("img");
-          iconElement.classList.toggle("rotate-icon");
-             // Toggle the style of the h4 element
-        const h4Element = questionContainer.querySelector("h4");
-        h4Element.classList.toggle("bold-h4");
-        });
-      });
-    </script>
-  </body>
-</html>
-  </body>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <main id="wrapper">
+    <div class="image_wrapper">
+      <div class="inner_img">
+      
+      </div>
+      <img src="images/illustration-box-desktop.svg" alt="">
+    </div>
+    <div id="accordion_wrapper">
+      <h1 class="accordion_title">FAQ</h1>
+      <div class="question-answer_accordion">
+        <div class="question">
+          <h3> How many team members can I invite?</h3>
+          <img src="images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer">
+            <p> You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</p>
+        </div>
+      </div>
+      <div class="question-answer_accordion">
+        <div class="question">
+          <h3> What is the maximum file upload size?</h3>
+          <img src="images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer">
+          <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+      </div>
+      <div class="question-answer_accordion">
+        <div class="question">
+          <h3>How do I reset my password?</h3>
+          <img src="images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer">
+          <p> Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</p>
+        </div>
+      </div>
+      <div class="question-answer_accordion">
+        <div class="question">
+          <h3>Can I cancel my subscription?</h3>
+          <img src="images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer">
+          <p> Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+      </div>
+      <div class="question-answer_accordion">
+        <div class="question">
+          <h3>Do you provide additional support?</h3>
+          <img src="images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="answer">
+          <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </div>
+      </div>
+    </div>
+   </main> 
+    <script src="script.js"></script>
+</body>
 </html>
