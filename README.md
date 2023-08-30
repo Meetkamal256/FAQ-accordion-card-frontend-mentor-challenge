@@ -12,12 +12,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot from 2023-08-30 22-28-48](https://github.com/Meetkamal256/FAQ-accordion-card-frontend-mentor-challenge/assets/104779844/89ef721f-1c37-4a94-baf2-ca1906a21af2)
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://faq-accordion-card-frontend-mentor-challenge-chi.vercel.app/
 
 ### Built with
 
